@@ -14,14 +14,14 @@ public class app004 {
         long createdDate = 0;
 
 
-            System.out.println("메뉴");
-            System.out.println("1. 예약 목록");
-            System.out.println("2. 예약 상세보기");
-            System.out.println("3. 예약 등록");
-            System.out.println();
-            System.out.println("메뉴를 선택하세요[1..3])(0: 종료)");
+        System.out.println("[메뉴]");
+        System.out.println("1. 여행 예약 목록");
+        System.out.println("2. 여행 예약 상세보기");
+        System.out.println("3. 여행 예약 등록");
+        System.out.println();
+        System.out.println("메뉴를 선택하세요[1..3])(0: 종료)");
 
-            int menuNo = keyboardput.nextInt();
+           /* int menuNo = keyboardput.nextInt();
             keyboardInput.nextLine();
 
             if(memuNo == 1) {
@@ -29,6 +29,6 @@ public class app004 {
                 ㅣ
             } else;
 
-
+*/
     }
 }
