@@ -1,2 +1,3 @@
-# self-study
-개발 공부
+# bitcamp-self-study
+비트캠프 셀프 스터디
+
