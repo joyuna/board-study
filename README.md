@@ -1,3 +1,2 @@
-# bitcamp-self-study
-비트캠프 셀프 스터디
-
+# bitcamp-backup
+수업 예제 자료 백업
