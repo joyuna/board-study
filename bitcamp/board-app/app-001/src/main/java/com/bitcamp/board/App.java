@@ -1,6 +1,7 @@
 /*
  * 게시판 관리 애플리케이션
- * 비트캠프-20220922-ver7
+ * 비트캠프-20220930-ver8
+ * ver7의 문제점 : 앱이 실행되는동안은 게시글이 저장됐다가 앱을 껐다 키면 초기화 됨 ..
  */
 package com.bitcamp.board;
 
@@ -10,7 +11,7 @@ public class App {
     welcome();
     loop: while (true) {
       displayMenu();
-      int menuNo = Prompt.inputInt("메뉴를 선택하세요[1..3](0: 종료)");
+      int menuNo = Prompt.inputInt("메뉴를 선택하세요[1..5](0: 종료)");
       displayLine();
 
       switch (menuNo) {
@@ -18,6 +19,8 @@ public class App {
         case 1: BoardHandler.processList(); break;
         case 2: BoardHandler.processDetail(); break;
         case 3: BoardHandler.processInput(); break;
+        case 4: BoardHandler.processDelete(); break;
+        case 5: BoardHandler.processUpdate(); break;
         default: System.out.println("메뉴 번호가 옳지 않습니다!");
       }
 
@@ -43,6 +46,8 @@ public class App {
     System.out.println(" 1: 게시글 목록");
     System.out.println(" 2: 게시글 상세보기");
     System.out.println(" 3: 게시글 등록");
+    System.out.println(" 4: 게시글 삭제");
+    System.out.println(" 5: 게시글 변경");
     System.out.println();
   }
 
